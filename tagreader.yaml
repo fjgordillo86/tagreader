@@ -68,6 +68,12 @@ switch:
   restore_state: true
   entity_category: config
   
+- platform: gpio
+  pin:
+    number: 0
+    inverted: true 
+  name: "Timbre"
+  
 # Define buttons for writing tags via HA 
 button:
   - platform: template
